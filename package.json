@@ -1,0 +1,23 @@
+{
+  "name": "postgres-mcp-server",
+  "version": "1.0.0",
+  "description": "Postgres MCP server",
+  "main": "main.js",
+  "scripts": {
+    "start": "bun main.ts",
+    "test": "chmod +x ./scripts/test-setup.sh && ./scripts/test-setup.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "pg": "^8.14.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
