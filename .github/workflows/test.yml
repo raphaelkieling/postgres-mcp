@@ -24,7 +24,7 @@ jobs:
     - name: Setup Docker
       uses: docker/setup-buildx-action@v3
 
-    - name: Run tests with setup script
-      run: |
-        chmod +x ./scripts/test-setup.sh
-        ./scripts/test-setup.sh 
+    - name: Run tests
+      run: bun test
+      env:
+        DATABASE_URL: postgres://test_user:test_password@localhost:5433/test_db 
